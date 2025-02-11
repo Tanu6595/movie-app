@@ -10,3 +10,17 @@
     border-color: #DC3545;
     box-shadow: none;
 }
+
+/* Logo Size */
+.logo {
+    width: 150px; /* Set your desired width */
+    height: 80px; /* Set your desired height */
+    object-fit: cover;
+    margin-left: -40px;
+}
+
+/* Navbar Width */
+.navbar {
+    height: 80px !important;
+    width: 1200px !important;
+}

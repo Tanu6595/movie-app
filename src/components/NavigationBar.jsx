@@ -1,9 +1,10 @@
+import React from "react";
 import { useState } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { setInput, setLanguage, setSortedBy, setWhichMovies } from "../redux/features/navigationBar/navigationBarSlice"
 import { getSearchAndQuery } from "../redux/features/searchAndQuery/searchAndQuerySlice"
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo.jpg"
 
 import { Navbar, Nav, NavDropdown, Form, Button } from "react-bootstrap"
 
@@ -65,7 +66,7 @@ function NavigationBar() {
     return (
         <Navbar fixed="top" expand="lg" className="bg-dark" data-bs-theme="dark">
             <div className="container">
-                <Navbar.Brand onClick={navbarBrandClick} style={{ cursor: "pointer" }}><img src={logo} alt="logo" style={{ width: "120px" }} /></Navbar.Brand>
+                <Navbar.Brand onClick={navbarBrandClick} style={{ cursor: "pointer" }}><img src={logo} alt="logo" className="logo" /></Navbar.Brand>
 
                 {currentLocation === "/" && (
                     <>
